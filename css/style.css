@@ -198,6 +198,11 @@ ul{
     padding:170px 0 100px;
 
     background:#F8FCFF;
+   min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
 
 }
 
@@ -210,6 +215,8 @@ ul{
     justify-content:space-between;
 
     gap:60px;
+   position: relative;
+    z-index: 2;
 
 }
 
@@ -390,3 +397,81 @@ ul{
     right:10px;
 
 }
+.hero{
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-bg{
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(14,165,233,.08);
+    filter: blur(10px);
+}
+
+.circle-1{
+    width:220px;
+    height:220px;
+    top:80px;
+    right:120px;
+}
+
+.circle-2{
+    width:140px;
+    height:140px;
+    bottom:80px;
+    left:120px;
+}
+
+.circle-3{
+    width:90px;
+    height:90px;
+    top:250px;
+    left:45%;
+   }
+
+.welcome-card{
+
+    position:absolute;
+
+    top:20px;
+
+    left:-20px;
+
+    background:#fff;
+
+    padding:15px 20px;
+
+    border-radius:16px;
+
+    box-shadow:var(--shadow);
+
+    max-width:190px;
+
+    z-index:5;
+
+}
+
+.welcome-card span{
+
+    font-weight:700;
+
+    color:var(--primary-color);
+
+}
+
+.welcome-card p{
+
+    margin-top:8px;
+
+    font-size:.9rem;
+
+    color:var(--gray);
+
+   }
