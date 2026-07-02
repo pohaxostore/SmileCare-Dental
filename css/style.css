@@ -310,7 +310,6 @@ ul{
     font-size:.95rem;
 
 }
-
 .hero-image{
 
     flex:1;
@@ -319,41 +318,43 @@ ul{
 
     justify-content:center;
 
+    align-items:center;
+
     position:relative;
 
 }
 
-.hero-image::before{
+.image-circle{
 
-    content:"";
+    width:500px;
 
-    position:absolute;
-
-    width:420px;
-
-    height:420px;
-
-    background:linear-gradient(
-        135deg,
-        #BAE6FD,
-        #0EA5E9
-    );
+    height:500px;
 
     border-radius:50%;
 
-    z-index:0;
+    background:linear-gradient(135deg,#DDF4FF,#0EA5E9);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-end;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 60px rgba(14,165,233,.25);
 
 }
 
-.hero-image img{
+.image-circle img{
 
-    position:relative;
+    width:88%;
 
-    width:420px;
+    height:auto;
 
-    z-index:2;
+    object-fit:contain;
 
-  }
+}
 /* Floating Cards */
 
 .floating-card{
