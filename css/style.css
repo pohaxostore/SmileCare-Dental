@@ -338,7 +338,7 @@ ul{
 
     justify-content:center;
 
-    align-items:flex-end;
+        align-items:center;
 
     overflow:hidden;
 
@@ -348,7 +348,7 @@ ul{
 
 .image-circle img{
 
-    width:88%;
+    width:78%;
 
     height:auto;
 
